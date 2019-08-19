@@ -36,10 +36,13 @@ class SignupPage extends Component{
 
   render(){
   return(
-    <form onSubmit={this.handleSubmit}>
-      Username: <input type = 'text' name='username' onChange={this.handleChange} value={this.state.username} />
-      Password: <input type = 'password' name='password' onChange={this.handleChange} value={this.state.password}/>
-      <input type = 'submit'/>
+
+    <form className="form-inline" onSubmit={this.handleSubmit}>
+    <label id="label">Signup</label>
+      <input type = 'text' placeholder="username" name='username' onChange={this.handleChange} value={this.state.username} />
+      <input type = 'password'placeholder="password" name='password' onChange={this.handleChange} value={this.state.password}/>
+      <button type = 'submit'>Submit</button>
+
     </form>
   )
   }

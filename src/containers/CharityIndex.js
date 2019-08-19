@@ -3,7 +3,7 @@ import CharityCollection from './CharityCollection'
 import LoginPage from '../components/LoginPage'
 import SignupPage from '../components/SignupPage'
 import ProfilePage from '../components/ProfilePage'
-// import HomePage from './HomePage'
+import Header from '../components/Header'
 import FourOhFourPage from '../components/FourOhFourPage'
 import '../App.css';
 import Filter from '../components/Filter'
@@ -49,7 +49,6 @@ class CharityIndex extends React.Component {
     })
   }
 
-
   setStateTerm = (stateTerm) => {
     this.setState({
       stateTerm: stateTerm
@@ -67,21 +66,26 @@ class CharityIndex extends React.Component {
     if (this.state.stateTerm === 'All') {
       copiedCharities = [...this.state.charity]
     } else {
-      copiedCharities= this.state.charity.filter(oneCharity => oneCharity.state === this.state.stateTerm)
+      copiedCharities= this.state.charity.filter(oneCharity => oneCharity.city === this.state.stateTerm)
     }
 
     // filter by category
     if (this.state.categoryTerm !== 'All') {
-      copiedCharities = copiedCharities.filter(oneCharity => oneCharity.category === this.state.categoryTerm)
+      copiedCharities = copiedCharities.filter(oneCharity => oneCharity.country === this.state.categoryTerm)
     }
 
     return copiedCharities
   }
 
+  onLogout = (e) => {
+    localStorage.clear("token")
+  }
+
   render(){
-    console.log(this.state);
+
     return(
       <div>
+      <Header onLogout={this.onLogout()}/>
       <Switch>
         // pass in props to this components
           <Route exact
@@ -90,13 +94,11 @@ class CharityIndex extends React.Component {
 
           <Route path='/signup' render={routerProps => <SignupPage {...routerProps} updateUsername={this.updateUsername}/> }/>
           <Route path='/login' component={LoginPage}/>
+      </Switch>
 
 
-        </Switch>
-
-
-        <CharityCollection charity={this.filterCharityTerm()} />
         <Filter stateTerm={this.state.stateTerm} categoryTerm={this.state.categoryTerm} setStateTerm = {this.setStateTerm} setCategoryTerm={this.setCategoryTerm} />
+        <CharityCollection charity={this.filterCharityTerm()} />
       </div>
 
     )
