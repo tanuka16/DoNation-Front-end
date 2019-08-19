@@ -8,7 +8,10 @@ body {
 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  background-image: linear-gradient(-60deg, #85FFBD 50%, #21D4FD 50%);
+  /* background-color: #21D4FD; */
+/* background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
+
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -55,6 +58,8 @@ h1 {
 
 .main-title{
   font-size: 50px;
+  text-align: left;
+  left: 50%;
 }
 
 
@@ -63,7 +68,7 @@ h1 {
   width: 80%;
   padding: 40px;
   border: 2px solid blue;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: 10px;
   align: center;
   position: relative;
@@ -96,7 +101,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  background-color: blue;
+  background-color: #3366ff;
 
 }
 .navbar a {
@@ -117,12 +122,51 @@ h1 {
 
 
 .active {
-  background-color: #00FF80;
+  background-color: #ff6633;
 }
 
 .logo {
   float: left;
 }
 
-
 /* navbar style ends here */
+/* Carousel */
+.carousel{
+  animation:fade 2s infinite;
+}
+
+/* end of carousel */
+
+/* login & signup */
+.form-inline {
+  /* display: flex; */
+  flex-flow: row wrap;
+  align-items: center;
+}
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+#label {
+  margin: 5px 10px 5px 0;
+  padding: 12px;
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* end login & signup */
+
+.welcome{
+  font-size: 25px;
+}

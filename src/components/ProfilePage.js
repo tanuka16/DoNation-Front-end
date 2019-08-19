@@ -12,7 +12,7 @@ class ProfilePage extends Component{
   }
   render(){
   return(
-      <div>
+      <div className='welcome'>
       {
         this.props.username ?
         (`Welcome, ${this.props.username}!`):

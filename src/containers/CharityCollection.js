@@ -6,13 +6,13 @@ class CharityCollection extends Component{
   render() {
     return (
       <div >
-        <h1 className="main-title">DoNation</h1>
         {
           this.props.charity.map((oneCharity) => <Charity key={oneCharity.id} {...oneCharity}/>)
         }
-      </div> 
+      </div>
     )
   }
 }
 
 export default CharityCollection
+// <h1 className="main-title">DoNation</h1>

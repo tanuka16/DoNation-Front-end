@@ -11,6 +11,8 @@ class LoginPage extends Component{
     this.setState({ [e.target.name]: e.target.value })
   }
 
+  
+
   handleSubmit=(e)=>{
     e.preventDefault()
     // console.log(this.state );
@@ -28,19 +30,19 @@ class LoginPage extends Component{
       if (data.token) {
         localStorage.token = data.token
         this.props.history.push('/profile')
-    }
-  })
+      }
+    })
   }
 
 
   render(){
+    // const login = this.state.username ? <>
   return(
-    <form onSubmit={this.handleSubmit}>
-    <label>Login
-      Username: <input type = 'text' name='username' onChange={this.handleChange} value={this.state.username} />
-      Password: <input type = 'password' name='password' onChange={this.handleChange} value={this.state.password}/>
-      <input type = 'submit'/>
-      </label>
+    <form className="form-inline" onSubmit={this.handleSubmit}>
+    <label id="label">Login</label>
+      <input type = 'text' placeholder="username" name='username' onChange={this.handleChange} value={this.state.username} />
+      <input type = 'password' placeholder="password" name='password' onChange={this.handleChange} value={this.state.password}/>
+      <button type='submit'>Submit</button>
     </form>
   )
   }
