@@ -5,7 +5,7 @@ html {
 body {
   margin:0;
 }
-
+ 
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #85FFBD 50%, #21D4FD 50%);
@@ -132,7 +132,7 @@ h1 {
 /* navbar style ends here */
 /* Carousel */
 .carousel{
-  animation:fade 2s infinite;
+  /* animation:fade 2s infinite; */
 }
 
 /* end of carousel */

@@ -16,7 +16,7 @@ const Charity = (props) =>(
       }
       </p>
       {
-        localStorage.token ?
+        props.currentUser ?
         <Elements >
           <Checkout/>
         </Elements>

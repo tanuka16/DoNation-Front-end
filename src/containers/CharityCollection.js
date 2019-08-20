@@ -7,7 +7,7 @@ class CharityCollection extends Component{
     return (
       <div >
         {
-          this.props.charity.map((oneCharity) => <Charity key={oneCharity.id} {...oneCharity}/>)
+          this.props.charity.map((oneCharity) => <Charity key={oneCharity.id} {...oneCharity} currentUser={this.props.currentUser}/>)
         }
       </div>
     )
