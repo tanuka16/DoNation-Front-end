@@ -1,7 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
 import CharityIndex from './containers/CharityIndex'
-// import Header from './components/Header'
 import {StripeProvider} from 'react-stripe-elements'
 import './App.css';
 
@@ -19,3 +18,6 @@ const App = () => (
 
 export default App;
 // <Header/>
+
+
+// import Header from './components/Header'

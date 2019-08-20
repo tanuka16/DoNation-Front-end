@@ -77,15 +77,26 @@ class CharityIndex extends React.Component {
     return copiedCharities
   }
 
-  onLogout = (e) => {
-    localStorage.clear("token")
+  // logOutChange=()=>{
+  //   this.setState({
+  //
+  //   })
+  // }
+  onLogout = () => {
+    localStorage.clear()
+    this.setState({
+      username:''
+    })
+    // this.props.history.push('/login')
   }
 
   render(){
+    // <Route path='/someplace' render={(routerProps) => <Component {...routerProps} moreProps={this.moreProps} /> } />
 
     return(
       <div>
-      <Header onLogout={this.onLogout()}/>
+      <Header onLogout={this.onLogout}/>
+
       <Switch>
         // pass in props to this components
           <Route exact
@@ -93,12 +104,12 @@ class CharityIndex extends React.Component {
           render={(routerProps) => <ProfilePage {...routerProps} username={this.state.username}/>}/>
 
           <Route path='/signup' render={routerProps => <SignupPage {...routerProps} updateUsername={this.updateUsername}/> }/>
-          <Route path='/login' component={LoginPage}/>
+          <Route path='/login' render={routerProps => <LoginPage {...routerProps} updateUsername={this.updateUsername}/> }/>
       </Switch>
 
 
         <Filter stateTerm={this.state.stateTerm} categoryTerm={this.state.categoryTerm} setStateTerm = {this.setStateTerm} setCategoryTerm={this.setCategoryTerm} />
-        <CharityCollection charity={this.filterCharityTerm()} />
+        <CharityCollection charity={this.filterCharityTerm()} currentUser= {this.state.username}  />
       </div>
 
     )

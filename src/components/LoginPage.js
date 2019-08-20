@@ -11,7 +11,7 @@ class LoginPage extends Component{
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  
+
 
   handleSubmit=(e)=>{
     e.preventDefault()
@@ -29,6 +29,7 @@ class LoginPage extends Component{
     .then(data => {
       if (data.token) {
         localStorage.token = data.token
+        this.props.updateUsername(data.user.username)
         this.props.history.push('/profile')
       }
     })
@@ -36,7 +37,7 @@ class LoginPage extends Component{
 
 
   render(){
-    // const login = this.state.username ? <>
+
   return(
     <form className="form-inline" onSubmit={this.handleSubmit}>
     <label id="label">Login</label>
@@ -48,3 +49,10 @@ class LoginPage extends Component{
   }
 }
 export default LoginPage;
+
+
+
+
+
+
+// const login = this.state.username ? <>
