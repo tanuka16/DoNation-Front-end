@@ -37,7 +37,7 @@ const steps = [
   },
   {
     id:'6',
-    message: "To give donation to a charity organization, kindly signup or login. Find the organization you would like to support and place the amount you would like to pay. Next, hit the 'Pay with' button, fill in your credit card information and click 'pay'.",
+    message: "To give donation to a charity organization, kindly signup or login. Find the organization you would like to support and place the amount you would like to pay.",
     trigger: '9'
   },
   {

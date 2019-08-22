@@ -8,7 +8,7 @@ const Charity = (props) =>{
   return (
   <div id='myDiv'>
 
-<h5 className="card-title">{props.name}</h5>
+  <h5 className="card-title">{props.name}</h5>
 
     <img src={props.logo_url} alt="" id='img' align="left" />
 
@@ -23,7 +23,7 @@ const Charity = (props) =>{
         <Elements >
           <Checkout/>
         </Elements>
-        : <a>Kindly signup or login to make donations</a>
+        : <a id='text'>Kindly signup or login to make donations</a>
       }
       </p>
 

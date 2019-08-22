@@ -126,6 +126,7 @@ h1 {
   color: white;
   text-decoration-color:
   font-size: 17px;
+  font-weight: bold;
 
   /* justify-content: space-around */
 }
@@ -133,7 +134,6 @@ h1 {
 .navbar a:hover {
   background-color: #0080FF;
 }
-
 
 .active {
   background-color: #ff6633;
@@ -265,4 +265,10 @@ h1 {
 }
 .icon-bar button:hover {
   background-color: #ff6633;
+}
+
+
+#text{
+  font-size: 20px;
+  color: blue;
 }
