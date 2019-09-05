@@ -19,18 +19,23 @@ class Header extends Component {
           <Link style={{marginLeft: 15}} to="/" onClick={this.props.onLogout}>Logout</Link>
         </nav>
         </div>
-        
-        <Carousel showThumbs={false} infiniteLoop={true} class='carousel'>
-          <div style={{ height: "200px"}}><img src="pic1.jpg" style={{ height: "400px", width: "900px" }}/>this is slide 2
-          </div>
-          <div style={{ height: "200px" }}><img src="pic2.png" style={{ height: "400px", width: "900px" }}/>this is slide 3
+
+        <Carousel showThumbs={false} infiniteLoop={true} className='carousel' autoPlay >
+        <div>
+          <img src="pic3.png" style={{ height: "500px", width: "100%" }}/>
+          <p className="legend">"You can help families live longer and grow stronger."</p>
+        </div>
+
+          <div style={{ height: "200px" }}><img src="pic2.png" style={{ height: "500px", width: "100%" }}/>
+           <p className="legend">"Animal entertainment is animal cruelty. Help us end it."</p>
           </div>
           <div>
-            <img src="pic3.png" style={{ height: "400px", width: "900px" }}/>this is slide 3
+            <img src="pic4.png" style={{ height: "500px", width: "100%" }} />
+            <p className="legend">"Be part of a change you want to see in the world."</p>
           </div>
           <div>
-            <img src="pic4.png" style={{ height: "400px", width: "900px" }} />
-            <p className="legend">Legend 1</p>
+            <img src="glorious_pegasus.jpg" style={{ height: "500px", width: "100%" }}/>
+            <p className="legend">"Breathing life into the future. Donation for tuition fees are required!"</p>
           </div>
         </Carousel>
 
@@ -42,3 +47,4 @@ class Header extends Component {
 }
 
 export default Header;
+// "The greatness of a nation and its moral progress can be judged by the way its animals are treated."

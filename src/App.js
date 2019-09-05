@@ -2,6 +2,10 @@ import React from 'react';
 // import logo from './logo.svg';
 import CharityIndex from './containers/CharityIndex'
 import {StripeProvider} from 'react-stripe-elements'
+import Chat from './containers/Chat'
+
+
+
 import './App.css';
 
 
@@ -10,6 +14,7 @@ const App = () => (
   <div className='App'>
 
     <CharityIndex/>
+    <Chat/>
   </div>
 
     </StripeProvider>

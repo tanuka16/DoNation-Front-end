@@ -5,7 +5,7 @@ html {
 body {
   margin:0;
 }
- 
+
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #85FFBD 50%, #21D4FD 50%);
@@ -59,14 +59,17 @@ h1 {
 .main-title{
   font-size: 50px;
   text-align: left;
-  left: 50%;
+  /* left: 0%; */
+  /* background-color: red; */
+  margin-right: 50%;
+  /* padding: 12px; */
 }
 
 
 #myDiv{
   /* display: grid; */
   width: 80%;
-  padding: 40px;
+  padding: 50px;
   border: 2px solid blue;
   border-radius: 10px;
   margin: 10px;
@@ -83,17 +86,28 @@ h1 {
   padding: 10px;
   float: left;
 }
+
 .card-text{
   padding-left: 100px;
   text-align: left;
-  margin-right: 150px;
-  margin-left: 80px ;
+  padding-right: 200px;
+  margin-left: 50px ;
   /* text-indent: 50px; */
   font-style: oblique;
+   /* background-color: red; */
+}
+#myDiv > h5{
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  left: 0%;
 }
 .card-title{
-  text-align: justify;
+  text-align: left;
   font-size: 30px;
+  /* background-color: red; */
+  padding-right: 40%;
+  /* right: 0%; */
 }
 
 /* navbar style starts here */
@@ -112,6 +126,7 @@ h1 {
   color: white;
   text-decoration-color:
   font-size: 17px;
+  font-weight: bold;
 
   /* justify-content: space-around */
 }
@@ -120,42 +135,101 @@ h1 {
   background-color: #0080FF;
 }
 
-
 .active {
   background-color: #ff6633;
 }
 
 .logo {
-  float: left;
+  left: 0%;
+}
+
+.donation-box{
+  margin-left: 50%;
+}
+
+.donation-box a{
+  font-weight: bold;
 }
 
 /* navbar style ends here */
-/* Carousel */
-.carousel{
-  /* animation:fade 2s infinite; */
+
+.legend{
+  border: 1px solid #ddd;
 }
 
 /* end of carousel */
 
+/* style filters */
+.filter{
+  margin: 30px 300px;
+  width: 50%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  size: 25px;
+  height: 10px;
+  grid-gap: 20px;
+  /* background-color: lightgrey; */
+
+}
+.city{
+  justify-self: end;
+}
+.country{
+  justify-self: start;
+}
+/* end of filters */
+
 /* login & signup */
 .form-inline {
   /* display: flex; */
+  /* margin: 0px 0px 20px 20px; */
+  margin: 20px 300px;
+  width: 50%;
   flex-flow: row wrap;
   align-items: center;
+  /* border: 3px solid blue; */
+  border-radius: 20px;
+  background-color: lightgrey;
+  border-bottom: 6px solid blue;
 }
+
 .form-inline button {
   padding: 10px 20px;
-  background-color: dodgerblue;
+  background-color: #3366ff;
   border: 1px solid #ddd;
-  color: white;
+  /* color: white; */
+  color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+  font-weight: bold;
+	padding:5px 31px;
+	text-decoration:none;
+  text-decoration-style:double;
+	text-shadow:0px 3px 0px #2f6627;
+  -webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #337bc4;
+  box-shadow: 3px 4px 0px 0px #1564ad;
+	display:inline-block;
   cursor: pointer;
+  -moz-border-radius:28px;
 }
+
+.form-inline:hover {
+	background-color:#ff6633;
+}
+.form-inline:active {
+	position:relative;
+	top:1px;
+}
+
 #label {
   margin: 5px 10px 5px 0;
   padding: 12px;
   font-family: Arial;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
+
 }
 .form-inline input {
   vertical-align: middle;
@@ -164,9 +238,37 @@ h1 {
   background-color: #fff;
   border: 1px solid #ddd;
 }
-
 /* end login & signup */
 
 .welcome{
   font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 5px 10px 5px 10px;
+}
+
+/* chatbot styling  */
+
+.icon-bar{
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0%;
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar button:hover {
+  background-color: #ff6633;
+}
+
+
+#text{
+  font-size: 20px;
+  color: blue;
 }
