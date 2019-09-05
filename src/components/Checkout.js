@@ -34,9 +34,9 @@ class Checkout extends Component {
                 amount = {parseInt(this.state.amount) * 100}
                 billingAddress={false}
                 zipCode={false}
-                description="DoNation"
+                description="Costal Pet Supplies"
                 image="https://i.pinimg.com/564x/f6/c0/75/f6c07532e8678364a051f6db1279178e.jpg"
-                label="Donate"
+                label="Pay with 💳"
             />
             </>
         );
