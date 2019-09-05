@@ -33,6 +33,7 @@ const steps = [
           { value: 2, label: 'Why should I donate to charities?', trigger: '10' },
           { value: 3, label: 'Would you like to watch a fun video?', trigger: '8' },
           { value: 4, label: 'Who made this app?', trigger: '7' },
+
         ],
   },
   {
@@ -64,6 +65,7 @@ const steps = [
     trigger: '9'
 
   }
+
 
 
 ]
