@@ -3,8 +3,8 @@ import React from 'react'
 const Filter = (props) => {
   console.log(props);
   return(
-    <div className="filter">
-    <div className="city">
+    <div>
+    <label>
       <strong>City:</strong>
        {/* in order to change what i'm sending up, I'll wrape onChange in an enormous function */}
       <select onChange={(e)=>props.setStateTerm(e.target.value)} value={props.stateTerm}>
@@ -14,8 +14,7 @@ const Filter = (props) => {
         <option value="Georgia">Georgia</option>
         <option value="All">All</option>
       </select>
-</div>
-<div className="country">
+
      <strong>Country:</strong>
       <select onChange={(e)=>props.setCategoryTerm(e.target.value)} value={props.categoryTerm}>
         <option value="GB">GB</option>
@@ -27,10 +26,8 @@ const Filter = (props) => {
         <option value="All">All</option>
       </select>
 
-      </div>
 
-
-
+    </label>
     </div>
   )
 }
