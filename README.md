@@ -1,4 +1,4 @@
-# DoNation
+# DoNation (Front-End)
 
 ## Tech stack
 **Frontend:** React, HTML and CSS<br>
