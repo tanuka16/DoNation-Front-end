@@ -49,10 +49,3 @@ class LoginPage extends Component{
   }
 }
 export default LoginPage;
-
-
-
-
-
-
-// const login = this.state.username ? <>
