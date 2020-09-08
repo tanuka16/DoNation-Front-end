@@ -1,4 +1,4 @@
-# DoNation (Front-End)
+# DoNation (Front-end)
 
 ## Tech stack
 **Frontend:** React, HTML and CSS<br>
@@ -25,3 +25,5 @@ Project Page:
 - For more details to navigate through the website checkout the chatbot
 
 **Backend GitHub Repository:** https://github.com/tanuka16/DoNation-Back-end
+<br>
+**Live Demo:** https://donation-smile.herokuapp.com/
