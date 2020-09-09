@@ -24,6 +24,12 @@ Project Page:
 - Next, use cadit card to award donations
 - For more details to navigate through the website checkout the chatbot
 
+## Future functionalities
+
+- add the backend to heroku
+- Users dashboard 
+- Checkout receipt
+
 **Backend GitHub Repository:** https://github.com/tanuka16/DoNation-Back-end
 <br>
 **Live Demo:** https://donation-smile.herokuapp.com/
