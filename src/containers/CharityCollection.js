@@ -15,4 +15,6 @@ class CharityCollection extends Component{
 }
 
 export default CharityCollection
-// <h1 className="main-title">DoNation</h1>
+
+// charity is passed down using props; on which i use  map method to create a new array
+ // The map() method creates a new array with the results of calling a function for every array element.

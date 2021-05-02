@@ -13,7 +13,7 @@ class ProfilePage extends Component{
   render(){
   return(
       <div className='welcome'>
-      {
+      { //conditional logic
         this.props.username ?
         (`Welcome, ${this.props.username}!`):
       null

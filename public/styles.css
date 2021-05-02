@@ -106,8 +106,9 @@ h1 {
   text-align: left;
   font-size: 30px;
   /* background-color: red; */
+  padding-bottom: 2%;
   padding-right: 40%;
-  /* right: 0%; */
+
 }
 
 /* navbar style starts here */
@@ -246,7 +247,17 @@ h1 {
   font-weight: bold;
   margin: 5px 10px 5px 10px;
 }
+/* footer */
 
+footer {
+	/* position: fixed; */
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	/* background-color: blue; */
+	color: white;
+	text-align: center;
+}
 /* chatbot styling  */
 
 .icon-bar{
