@@ -20,25 +20,26 @@ class Header extends Component {
         </nav>
         </div>
 
-        <Carousel showThumbs={false} infiniteLoop={true} className='carousel' autoPlay >
-        <div>
-          <img src="pic3.png" style={{ height: "500px", width: "100%" }}/>
-          <p className="legend">"You can help families live longer and grow stronger."</p>
-        </div>
+        <Carousel showThumbs={false} infiniteLoop={true} class='carousel'>
+        {/*
+          <div style={{ height: "200px"}}>
+            <img src="pic1.jpg" alt='' style={{ height: "400px", width: "100%"  }}/>
+          </div>
+        */}
+          <div style={{ height: "200px" }}>
+            <img src="pic2.png" alt='' style={{ height: "400px", width: "100%"  }}/>
+            <p className="legend">"You can help families live longer and grow stronger."</p>
+          </div>
 
-          <div style={{ height: "200px" }}><img src="pic2.png" style={{ height: "500px", width: "100%" }}/>
-           <p className="legend">"Animal entertainment is animal cruelty. Help us end it."</p>
+          <div>
+            <img src="pic3.png" alt='' style={{ height: "400px", width: "100%"  }}/>
+            <p className="legend">"Animal entertainment is animal cruelty. Help us end it."</p>
           </div>
           <div>
-            <img src="pic4.png" style={{ height: "500px", width: "100%" }} />
+            <img src="pic4.png" alt='' style={{ height: "400px", width: "100%"  }} />
             <p className="legend">"Be part of a change you want to see in the world."</p>
           </div>
-          <div>
-            <img src="glorious_pegasus.jpg" style={{ height: "500px", width: "100%" }}/>
-            <p className="legend">"Breathing life into the future. Donation for tuition fees are required!"</p>
-          </div>
         </Carousel>
-
         </div>
 
     );
