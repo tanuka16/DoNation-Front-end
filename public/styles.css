@@ -59,17 +59,16 @@ h1 {
 .main-title{
   font-size: 50px;
   text-align: left;
-  /* left: 0%; */
-  /* background-color: red; */
-  margin-right: 50%;
-  /* padding: 12px; */
+  position: absolute;
+  left: 10%;
+  /* margin-left: -150px; */
 }
 
 
 #myDiv{
   /* display: grid; */
   width: 80%;
-  padding: 50px;
+  padding: 40px;
   border: 2px solid blue;
   border-radius: 10px;
   margin: 10px;
@@ -77,33 +76,25 @@ h1 {
   position: relative;
   left: 80px;
 }
+#myDiv p{
+  margin: 5px 150px 75px 150px;
+  align: center;
+}
+
 #img{
   border: 1px solid #ddd;
   border-radius: 4px;
+  margin: 5px 10px 10px 10px;
   height: 90px;
   width: 200;
-  margin-bottom: 100px;
   padding: 10px;
-  float: left;
-}
-
-.card-text{
-  padding-left: 100px;
-  text-align: left;
-  padding-right: 200px;
-  margin-left: 50px ;
-  /* text-indent: 50px; */
-  font-style: oblique;
-   /* background-color: red; */
-}
-#myDiv > h5{
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-right: 0px;
-  left: 0%;
+  flex: 0 0;
 }
 .card-title{
-  text-align: left;
+  /* text-align: center; */
+  padding: 0;
+  margin: 10;
+  flex: 1 0;
   font-size: 30px;
   /* background-color: red; */
   padding-bottom: 2%;
@@ -121,29 +112,21 @@ h1 {
 }
 .navbar a {
   display: flex;
-  /* align-items: space-between; */
   float: right;
   padding: 25px;
   color: white;
   text-decoration-color:
   font-size: 17px;
-  font-weight: bold;
-
-  /* justify-content: space-around */
 }
 
 .navbar a:hover {
   background-color: #0080FF;
 }
 
+
 .active {
   background-color: #ff6633;
 }
-
-.logo {
-  left: 0%;
-}
-
 .donation-box{
   margin-left: 50%;
 }
@@ -154,84 +137,34 @@ h1 {
 
 /* navbar style ends here */
 
+
 .legend{
   border: 1px solid #ddd;
-}
-
+} 
 
 /* end of carousel */
 
-/* style filters */
-.filter{
-  margin: 30px 300px;
-  width: 50%;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  size: 25px;
-  height: 10px;
-  grid-gap: 20px;
-  /* background-color: lightgrey; */
 
-}
-.city{
-  justify-self: end;
-}
-.country{
-  justify-self: start;
-}
-/* end of filters */
 
 /* login & signup */
 .form-inline {
   /* display: flex; */
-  /* margin: 0px 0px 20px 20px; */
-  margin: 20px 300px;
-  width: 50%;
   flex-flow: row wrap;
   align-items: center;
-  /* border: 3px solid blue; */
-  border-radius: 20px;
-  background-color: lightgrey;
-  border-bottom: 6px solid blue;
 }
-
 .form-inline button {
   padding: 10px 20px;
-  background-color: #3366ff;
+  background-color: dodgerblue;
   border: 1px solid #ddd;
-  /* color: white; */
-  color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-  font-weight: bold;
-	padding:5px 31px;
-	text-decoration:none;
-  text-decoration-style:double;
-	text-shadow:0px 3px 0px #2f6627;
-  -webkit-border-radius:28px;
-	border-radius:28px;
-	border:1px solid #337bc4;
-  box-shadow: 3px 4px 0px 0px #1564ad;
-	display:inline-block;
+  color: white;
   cursor: pointer;
-  -moz-border-radius:28px;
 }
-
-.form-inline:hover {
-	background-color:#ff6633;
-}
-.form-inline:active {
-	position:relative;
-	top:1px;
-}
-
 #label {
   margin: 5px 10px 5px 0;
   padding: 12px;
   font-family: Arial;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
-
 }
 .form-inline input {
   vertical-align: middle;
@@ -240,16 +173,28 @@ h1 {
   background-color: #fff;
   border: 1px solid #ddd;
 }
+
 /* end login & signup */
 
+/* fiters */
+.filter{
+  margin: 30px 300px;
+}
+.city{
+  padding: 15px;
+}
+.country{
+  padding: 15px;
+}
 .welcome{
-  font-size: 25px;
-  font-family: Arial;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 35px;
   font-weight: bold;
   margin: 5px 10px 5px 10px;
 }
-/* footer */
 
+/* footer */
 footer {
 	/* position: fixed; */
 	width: 100%;

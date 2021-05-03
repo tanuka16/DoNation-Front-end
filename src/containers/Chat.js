@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import ChatBot from 'react-simple-chatbot';
 
 
-
 const steps = [
   {
     id:'1',
@@ -33,7 +32,7 @@ const steps = [
           { value: 2, label: 'Why should I donate to charities?', trigger: '10' },
           { value: 3, label: 'Would you like to watch a fun video?', trigger: '8' },
           { value: 4, label: 'Who made this app?', trigger: '7' },
-
+          // { value: 5, label: 'Reach her out for recruitment?', trigger: '12' }
         ],
   },
   {
@@ -45,7 +44,7 @@ const steps = [
     id: '7',
     message:'💃🏻👸🏻 TANUKA DAS👸🏻💃🏻',
     trigger: '9',
-    delay: 1000
+    delay: 800
   },
   {
     id: '8',
@@ -66,15 +65,12 @@ const steps = [
 
   }
 
-
-
 ]
 
 function CharityLink(props) {
   return(<iframe width="560" height="315" src="https://www.youtube.com/embed/xpB9Bvd42hk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)
 
 }
-
 
 class Chat extends Component{
   state={
@@ -98,3 +94,10 @@ class Chat extends Component{
 }
 
 export default Chat;
+
+// function jobProfile(props){
+//   return(
+//       <document file ="TanukaDas-Resume.pdf"/>
+//         // <a href = "TanukaDas-Resume.pdf" target = "_blank">Download Resume</a>
+//         )
+// }

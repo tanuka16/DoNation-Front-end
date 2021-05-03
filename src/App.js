@@ -3,10 +3,7 @@ import React from 'react';
 import CharityIndex from './containers/CharityIndex'
 import {StripeProvider} from 'react-stripe-elements'
 import Chat from './containers/Chat'
-
-
-
-import './App.css';
+// import './App.css';
 
 
 const App = () => (
