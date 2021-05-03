@@ -96,6 +96,10 @@ h1 {
   margin: 10;
   flex: 1 0;
   font-size: 30px;
+  /* background-color: red; */
+  padding-bottom: 2%;
+  padding-right: 40%;
+
 }
 
 /* navbar style starts here */
@@ -134,13 +138,10 @@ h1 {
 /* navbar style ends here */
 
 
-/* Carousel */
-/* .carousel{
-  animation:fade 2s infinite;
-} */
-/* .legend{
+.legend{
   border: 1px solid #ddd;
-} */
+} 
+
 /* end of carousel */
 
 
@@ -190,9 +191,19 @@ h1 {
   padding-bottom: 25px;
   font-size: 35px;
   font-weight: bold;
-  color: blue;
-} 
+  margin: 5px 10px 5px 10px;
+}
 
+/* footer */
+footer {
+	/* position: fixed; */
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	/* background-color: blue; */
+	color: white;
+	text-align: center;
+}
 /* chatbot styling  */
 
 .icon-bar{

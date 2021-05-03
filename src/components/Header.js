@@ -18,22 +18,30 @@ class Header extends Component {
           <Link to="/login"><i className="login"></i> Login</Link>
           <Link style={{marginLeft: 15}} to="/" onClick={this.props.onLogout}>Logout</Link>
         </nav>
-      </div>
+
+        </div>
 
         <Carousel showThumbs={false} infiniteLoop={true} class='carousel'>
-          <div style={{ height: "200px"}}><img src="pic1.jpg" alt='' style={{ height: "400px", width: "900px" }}/>this is slide 2
+        {/*
+          <div style={{ height: "200px"}}>
+            <img src="pic1.jpg" alt='' style={{ height: "400px", width: "100%"  }}/>
+          </div> 
+        */}
+          <div style={{ height: "200px" }}>
+            <img src="pic2.png" alt='' style={{ height: "400px", width: "100%"  }}/>
+            <p className="legend">"You can help families live longer and grow stronger."</p>
           </div>
-          <div style={{ height: "200px" }}><img src="pic2.png" alt='' style={{ height: "400px", width: "900px" }}/>this is slide 3
-          </div>
+
           <div>
-            <img src="pic3.png" alt='' style={{ height: "400px", width: "900px" }}/>this is slide 3
+            <img src="pic3.png" alt='' style={{ height: "400px", width: "100%"  }}/>
+            <p className="legend">"Animal entertainment is animal cruelty. Help us end it."</p>
           </div>
+      
           <div>
-            <img src="pic4.png" alt='' style={{ height: "400px", width: "900px" }} />
-            <p className="legend">Legend 1</p>
+            <img src="pic4.png" alt='' style={{ height: "400px", width: "100%"  }} />
+            <p className="legend">"Be part of a change you want to see in the world."</p>
           </div>
         </Carousel>
-
         </div>
 
     );

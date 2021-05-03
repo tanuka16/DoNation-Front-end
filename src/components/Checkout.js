@@ -6,7 +6,7 @@ class Checkout extends Component {
     state = {
       amount: 0
     }
-
+// gives access to 2 parameters token and addresses
     onToken = (token, addresses) => {
         fetch("http://localhost:3000/donations", {
             method: "POST",
@@ -19,7 +19,7 @@ class Checkout extends Component {
         .then(r => r.json())
         .then(chargeData => {
             console.log(chargeData)
-        })
+        }) 
     }
 
     handleChange = event => this.setState({ amount: event.target.value })
@@ -30,8 +30,8 @@ class Checkout extends Component {
           <input type='number' value={this.state.amount} onChange={this.handleChange}/>
             <StripeCheckout
                 stripeKey = "pk_test_iQ2PvhCJKOw4BbMGWD6VF3jA00z3yFKwxs"
-                token = {this.onToken}
-                amount = {parseInt(this.state.amount) * 100}
+                token = {this.onToken}      //token prop accepts a call back funtion, which gives access to the created token
+                amount = {parseInt(this.state.amount) * 100}      //*100 converts the price into cents
                 billingAddress={false}
                 zipCode={false}
                 description="Costal Pet Supplies"

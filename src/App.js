@@ -8,11 +8,11 @@ import Chat from './containers/Chat'
 
 const App = () => (
   <StripeProvider apiKey="pk_test_iQ2PvhCJKOw4BbMGWD6VF3jA00z3yFKwxs">
-  <div className='App'>
+    <div className='App'>
 
-    <CharityIndex/>
-    <Chat/>
-  </div>
+      <CharityIndex/>
+      <Chat/>
+    </div>
 
     </StripeProvider>
 )
@@ -20,6 +20,6 @@ const App = () => (
 
 export default App;
 // <Header/>
-
+// used react-stripe-elements, it wrap the checkout in a special higher order component called StripeProvider
 
 // import Header from './components/Header'
